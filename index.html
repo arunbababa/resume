@@ -1,223 +1,451 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Aru's Resume</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Tanaka Alfredo Hatsuki</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">概要</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">経験</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">学歴</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">スキル</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">趣味</a></li>
-                </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Tanaka Alfredo Hatsuki - Portfolio & Resume" />
+    <meta name="author" content="Tanaka Alfredo Hatsuki" />
+    <title>Tanaka Alfredo Hatsuki - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/dark-theme.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Tanaka <span class="highlight">Alfredo</span></h2>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Tanaka
-                        <span class="text-primary">Alfuredo Hatsuki</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        千葉県在住
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">概要</a></li>
+                <li><a href="#experience" class="nav-link">経験</a></li>
+                <li><a href="#projects" class="nav-link">プロジェクト</a></li>
+                <li><a href="#skills" class="nav-link">スキル</a></li>
+                <li><a href="#education" class="nav-link">学歴</a></li>
+                <li><a href="#contact" class="nav-link">コンタクト</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image" data-aos="fade-up">
+                    <img src="assets/img/profile.jpg" alt="Profile" class="profile-img" />
+                    <div class="image-border"></div>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Tanaka <span class="highlight">Alfredo Hatsuki</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    QA Engineer | Test Automation Specialist
+                </p>
+                <div class="hero-tags" data-aos="fade-up" data-aos-delay="300">
+                    <span class="tag">Python</span>
+                    <span class="tag">Playwright</span>
+                    <span class="tag">React</span>
+                    <span class="tag">E2E Testing</span>
+                </div>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                    <a href="mailto:hatuki.1.gzs@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">概要</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="about-text">
+                    <p class="lead">千葉県在住のQAエンジニアです。</p>
+                    <p>テスト自動化とコード品質の向上に情熱を持っています。特にE2Eテストの自動化、Page Object Modelを活用した保守性の高いテストコード設計を得意としています。</p>
+                    <p>Python、Playwright、pytestを使用したテスト自動化に加え、フロントエンド開発（React、TypeScript）にも取り組んでいます。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">年の経験</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">技術スタック</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">プロジェクト</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">経験</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023/09 - 現在</div>
+                        <h3>QAエンジニア（インターン）</h3>
+                        <h4>株式会社ワークスアプリケーションズ</h4>
+                        <p>E2Eテストの自動化に従事。Python、Playwright、pytestを活用し、テストコードの保守性向上に注力。Page Object Model（POM）を学び実装中。</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">pytest</span>
+                            <span class="tech-tag">E2E Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024/04 - 2024/05</div>
+                        <h3>SAPコンサルタント研修</h3>
+                        <h4>株式会社ワンダーキャメル</h4>
+                        <p>家庭事情により約一ヶ月で退職。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022/08 - 2024/02</div>
+                        <h3>塾講師（アルバイト）</h3>
+                        <h4>武田塾</h4>
+                        <p>物理、数学、英語の講師として大学受験対策を担当。GMARCH〜中堅国公立、中堅私大対策を得意としていました。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023/05 - 2023/12</div>
+                        <h3>事務（インターン）</h3>
+                        <h4>株式会社船井総合研究所</h4>
+                        <p>Zohoを利用した顧客へのメール作成、配信業務。業務改善や調査業務にも従事。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">プロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E2E Test Automation Framework</h3>
+                        <p>Playwright + pytestを使用した大規模アプリケーション向けのテスト自動化フレームワーク。POMパターンを採用し、保守性を重視した設計。</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Playwright</span>
+                            <span>pytest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Task Manager</h3>
+                        <p>React + TypeScript + Supabaseで構築した個人用タスク管理アプリケーション。リアルタイム同期とレスポンシブデザインを実装。</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CI/CD Pipeline Implementation</h3>
+                        <p>GitLab CIを使用した自動テスト・デプロイパイプラインの構築。テストカバレッジレポートの自動生成も実装。</p>
+                        <div class="project-tags">
+                            <span>GitLab CI</span>
+                            <span>Docker</span>
+                            <span>pytest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Jest Unit Test Suite</h3>
+                        <p>Reactコンポーネントの包括的なユニットテストスイート。Testing Libraryを活用したユーザー中心のテスト実装。</p>
+                        <div class="project-tags">
+                            <span>Jest</span>
+                            <span>React</span>
+                            <span>Testing Library</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">スキル</h2>
+
+            <div class="skills-category" data-aos="fade-up">
+                <h3 class="category-title">テスト & QA</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/playwright.webp" alt="Playwright" />
+                        </div>
+                        <h4>Playwright</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/pytest.png" alt="pytest" />
+                        </div>
+                        <h4>pytest</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/jest.png" alt="Jest" />
+                        </div>
+                        <h4>Jest</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="category-title">プログラミング言語</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h4>PHP</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="category-title">ツール & その他</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h4>Git</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h4>GitHub</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="strengths-section" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="category-title">強み</h3>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>テストの自動化、テストコードの保守性向上</p>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Playwright、pytestを利用したE2Eテストの自動化</p>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Jestを利用したユニットテストの自動化</p>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>GitLab、GitHubによるCI/CDの経験</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">学歴</h2>
+            <div class="education-grid">
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-status current">在学中</div>
+                        <h3>放送大学</h3>
+                        <h4>教養学部</h4>
+                        <p>様々な講座から興味のあるものを受講しています。</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-status">退学</div>
+                        <h3>東京都市大学</h3>
+                        <h4>理工学部 機械工学科</h4>
+                        <p>家庭事情により退学し、その後放送大学へ編入学しています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">コンタクト</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                <p class="contact-text">お仕事のご依頼やご相談がありましたら、お気軽にご連絡ください。</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto:hatuki.1.gzs@gmail.com">hatuki.1.gzs@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">ご覧いただきありがとうございます。</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>千葉県在住</span>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">経験</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">QAエンジニア（インターン）</h3>
-                            <div class="subheading mb-3">株式会社ワークスアプリケーションズ</div>
-                            <p>QAエンジニアとしてE2Eテストの自動化に従事しています。（2025/03現在継続中～）言語はpython、ライブラリにplaywright、pytestを利用しています。最近はテストコード自体の保守性を高めることに重点を置くために、POM化を学び取り組んでいます。</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023/09 - 2024/02 - 一時中断 - 2024/08~現在</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SAPコンサルタント研修</h3>
-                            <div class="subheading mb-3">株式会社ワンダーキャメル</div>
-                            <p>家庭事情により約一ヶ月で退職しました。</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024/04 - 2024/05</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">塾講師（アルバイト）</h3>
-                            <div class="subheading mb-3">武田塾</div>
-                            <p>物理、数学、英語の講師としてアルバイトをしていました。主に大学受験対策を担当し、GMARCH~中堅国公立、中堅私大対策を得意としていました。</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022/08 - 2024/02</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">事務（インターン）</h3>
-                            <div class="subheading mb-3">株式会社船井総合研究所</div>
-                            <p>Zohoを利用した顧客へのメール作成、配信業務に従事していました。その他業務改善や調査業務にも取り組まさせていただきました。</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023/05 - 2023/12</span></div>
-                    </div>
+                <div class="contact-social">
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">学歴</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">放送大学（在学中）</h3>
-                            <div class="subheading mb-3">教養学部</div>
-                            <div>様々な講座から興味のあるものを受講しています。</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">東京都市大学（退学済み）</h3>
-                            <div class="subheading mb-3">理工学部機械工学科</div>
-                            <p>家庭事情により退学し、その後放送大学へ編入学しています。</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">スキル</h2>
-                    <div class="subheading mb-3">利用したことのある言語＆ツール</div>
-                    <ul class="list-inline dev-icons">
-                        <i class="fa-brands fa-git"></i>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
-                        <br>
-                        <li class="list-inline-item"><img src="assets/img/playwright.webp" alt="playwrightの画像" width="130" height="90"></li>
-                        <li class="list-inline-item"><img src="assets/img/jest.png" alt="playwrightの画像" width="130" height="60"></li>
-                        <li class="list-inline-item"><img src="assets/img/pytest.png" alt="playwrightの画像" width="130" height="70"></li>
-                    </ul>
-                    <div class="subheading mb-3">強み</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            テストの自動化、テストコードの保守性向上
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            playwright、pytestを利用したE2Eテストの自動化
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Jestを利用したユニットテストの自動化
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            gitlab、githubによるCI/CDの経験
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">趣味</h2>
-                    <p>●球技と格闘技を幼少期からやっており今でも習慣でやるほど好きです<br>最近は卓球にハマっています。</p>
-                    <p class="mb-0">●プログラミングに関していうと、reactやtypescript、supabaseとfirebaseを利用し小さく自分用のアプリケーションを作ったりしています。</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- 受賞欄は現状書くことないが、今後使う可能性はあるのでコメントアウト -->
-            <!-- Awards-->
-            <!-- <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">受賞</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div> -->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tanaka Alfredo Hatsuki. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</body>
 </html>
